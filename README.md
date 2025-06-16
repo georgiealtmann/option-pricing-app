@@ -4,7 +4,7 @@ This interactive Python app implements two option pricing models and allows user
 
 ## Live Application
 
-[Launch the App](https://option-pricing-app-ermqchngxhk4blubgtb2hz.streamlit.app/)
+[Launch the App](https://georgiealtmann-option-pricing.streamlit.app)
 
 ## Features
 
