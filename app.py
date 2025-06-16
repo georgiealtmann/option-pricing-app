@@ -113,6 +113,8 @@ if option_mode == "Vanilla European Call Option":
     #this part follows the same logic as above
 elif option_mode == "Exotic (Barrier Call) Option":
     st.markdown("This calculator prices **up-and-out barrier call options** using Monte Carlo simulation.")
+    
+    st.sidebar.caption("💡 Recommended: M = 50,000 simulations | N = 2,520 time steps")
 
     S_ex = st.sidebar.number_input("Spot Price (S)", value=100.0, key="S_ex")
     K_ex = st.sidebar.number_input("Strike Price (K)", value=100.0, key="K_ex")
