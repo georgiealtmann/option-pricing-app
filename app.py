@@ -114,7 +114,7 @@ if option_mode == "Vanilla European Call Option":
 elif option_mode == "Exotic (Barrier Call) Option":
     st.markdown("This calculator prices **up-and-out barrier call options** using Monte Carlo simulation.")
     
-    st.sidebar.caption("💡 Recommended (only locally!): M = 50,000 simulations | N = 2,520 time steps")
+
 
     S_ex = st.sidebar.number_input("Spot Price (S)", value=100.0, key="S_ex")
     K_ex = st.sidebar.number_input("Strike Price (K)", value=100.0, key="K_ex")
@@ -124,6 +124,7 @@ elif option_mode == "Exotic (Barrier Call) Option":
     r_ex_percent = st.sidebar.slider("Risk-Free Rate (%)", 0.0, 20.0, 5.0, step=0.1, key="r_ex")
     n_sim = st.sidebar.number_input("Number of Simulations (M)", value=10000, step=1000, key="n_sim")
     n_steps = st.sidebar.number_input("Time Steps (N)", value=252, step=50, key="n_steps")
+    st.sidebar.caption("💡 Recommended (only locally!): M = 50,000 simulations | N = 2,520 time steps")
 
     sigma_ex = sigma_ex_percent / 100
     r_ex = r_ex_percent / 100
