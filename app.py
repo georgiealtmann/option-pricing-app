@@ -6,7 +6,7 @@ import time
 from scipy.stats import norm
 from numpy import exp, sqrt, log
 
-# creating class (I will call another one with different model): Black-Scholes Model 
+# creating class: Black-Scholes Model 
 class BlackScholes:
     def __init__(self, time_to_maturity, strike, current_price, volatility, interest_rate):
     # initialize model parameters
