@@ -8,12 +8,12 @@ This interactive Python app implements two option pricing models and allows user
 
 ## Features
 
-### 1. Vanilla Options – Black-Scholes Model
+### 1. Vanilla Call Options – Black-Scholes Model
 - Computes European-style call option prices using the closed-form Black-Scholes formula
 - Visualizes the delta across a range of spot prices
 - Fully interactive parameter controls for spot price, volatility, maturity, and rik-free rate
 
-### 2. Exotic Options – Up-and-Out Barrier Call (Monte Carlo)
+### 2. Exotic Options – Up-and-Out Barrier Call (using Monte Carlo)
 - Uses simulated geometric Brownian motion to price barrier options
 - Implements barrier breach logic with payoff cancellation
 - Displays forecasted Brownian paths
