@@ -120,8 +120,8 @@ elif option_mode == "Exotic (Barrier Call) Option":
     T_ex = st.sidebar.slider("Time to Maturity (T)", 0.10, 30.0, 1.0, step=0.1, key="T_ex")
     sigma_ex_percent = st.sidebar.slider("Volatility (%)", 1.0, 100.0, 20.0, step=0.5, key="sigma_ex")
     r_ex_percent = st.sidebar.slider("Risk-Free Rate (%)", 0.0, 20.0, 5.0, step=0.1, key="r_ex")
-    n_sim = st.sidebar.number_input("Number of Simulations (M)", value=30000, step=1000, key="n_sim")
-    n_steps = st.sidebar.number_input("Time Steps (N)", value=1500, step=50, key="n_steps")
+    n_sim = st.sidebar.number_input("Number of Simulations (M)", value=10000, step=1000, key="n_sim")
+    n_steps = st.sidebar.number_input("Time Steps (N)", value=1000, step=50, key="n_steps")
 
     sigma_ex = sigma_ex_percent / 100
     r_ex = r_ex_percent / 100
